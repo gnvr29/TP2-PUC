@@ -8,7 +8,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://kit.fontawesome.com/0b74d2be28.js" crossorigin="anonymous"></script>
-  <title>TP1</title>
+  <title>TP2</title>
 </head>
 
 <body class="mb-5">
@@ -53,26 +53,26 @@
               <!--Picture-->
               <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xxl-3 m-xxl-0">
                 <div class="container d-lg-flex justify-content-lg-center justify-content-xxl-start">
-                  <img src="assets/img/mypic.jpg" alt="" class="img-fluid mb-4 img-thumbnail" id="my-pic">
+                  <img src="" alt="" class="img-fluid mb-4 img-thumbnail" id="my-pic">
                 </div>
               </div>
               <!--End of picture-->
 
               <!--Info-->
               <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 col-xxl-9 d-xxl-flex flex-xxl-column justify-content-xxl-start">
-                <h3 class="text-lg-md-center">Gabriel N. V. Resende</h3>
-                <p class="mb-4">Estudante apaixonado por Engenharia de Software, encontrando na programação em Java uma forma de expressar minha criatividade e resolver problemas complexos. Além do mundo digital, tenho fascínio pela literatura russa, mergulhando nas obras de grandes autores para expandir meus horizontes. Nos momentos de descontração, encontro equilíbrio no jiu-jitsu e no xadrez, onde aprendo lições de disciplina e superação. Sempre em busca de novos desafios, também me dedico a explorar novas línguas, expandindo minha compreensão do mundo e das culturas que o habitam.</p>
+                <h3 class="text-lg-md-center" id="name-area"></h3>
+                <p class="mb-4" id="bio-area"></p>
                 <h4>Location</h4>
                 <div class="d-flex flex-row justify-content-between mb-4">
-                  <p>Belo Horizonte, MG, Brasil</p>
-                  <i class="fa-solid fa-user fa"> 122</i>
+                  <p id="location-area"></p>
+                  <i class="fa-solid fa-user fa" id="followers"></i>
                 </div>
-                <h4>Site</h4>
-                <a href="https://www.pucminas.br/AcessoRestrito/Paginas/SGA-Alunos.aspx"><p class="mb-5">https://www.pucminas.br/AcessoRestrito/Paginas/SGA-Alunos.aspx</p></a>
+                <h4>Webite</h4>
+                <a href="" id="website-area"><p class="mb-5"></p></a>
                 <div class="d-flex flex-row justify-content-evenly justify-content-xxl-start">
-                  <a href="https://www.instagram.com/gabriel_nvrizzende/" class="mr-2"><i class="fa-brands fa-instagram fa-2x fa-fw"></i></a>
-                  <a href="https://www.linkedin.com/in/gabriel-nogueira-vieira-resende-7686242aa/"><i class="fa-brands fa-linkedin fa-2x fa-fw"></i></a>
-                  <a href="https://github.com/gnvr29"><i class="fa-brands fa-github fa-2x fa-fw"></i></a>
+                  <a href="" target="_blank" class="mr-2" id="instagram-area"><i class="fa-brands fa-instagram fa-2x fa-fw"></i></a>
+                  <a href="" target="_blank" id="linkedin-area"><i class="fa-brands fa-linkedin fa-2x fa-fw"></i></a>
+                  <a href="" target="_blank" id="github-area"><i class="fa-brands fa-github fa-2x fa-fw"></i></a>
                 </div>
               </div>
               <!--End of Info-->
@@ -87,74 +87,8 @@
         <div class="col">
           <h2 class="border-bottom border-secondary pb-2 mb-4" id="numRepos"></h2>
           <!--Cards-->
-
           <div class="container">
             <div class="row row-cols-1 row-cols-ms-2" id="repo-area">
-              <!--
-              Repo card 1
-              <div class="col d-flex justify-content-center col-lg-6 col-xxl-3">
-                <div class="card mb-4" style="width: 18rem;">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-center">TP1-PUC</h5>
-                    <p class="card-text text-start">Repositório no github do primeiro trabalho prático da matéria Desenvolvimento de interfaces web <b>(Este contém o link para a segunda página)</b></p>
-                    <div class="mt-auto d-flex flex-column">
-                      <div class="d-flex flex-row justify-content-evenly mb-4">
-                        <i class="fa-regular fa-star"> 0</i>
-                        <i class="fa-regular fa-user"> 0</i>
-                      </div>
-                      <a href="repo.html" class="btn btn-primary">Ler mais</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              Repo card 2
-              <div class="col d-flex justify-content-center col-lg-6 col-xxl-3">
-                <div class="card mb-4" style="width: 18rem;">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-center">PYTHON-AUTOMATION-PROJECTS</h5>
-                    <p class="card-text text-start">Repositório dos exercícios feitos em um curso da Udemy sobre automação utilizando Python</p>
-                    <div class="mt-auto d-flex flex-column">
-                      <div class="d-flex flex-row justify-content-evenly mb-4">
-                        <i class="fa-regular fa-star"> 0</i>
-                        <i class="fa-regular fa-user"> 0</i>
-                      </div>
-                      <a href="https://github.com/gnvr29/PYTHON-AUTOMATION-PROJECTS" class="btn btn-primary">Ler mais</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              Repo card 3
-              <div class="col d-flex justify-content-center col-lg-6 col-xxl-3">
-                <div class="card mb-4" style="width: 18rem;">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-center">Bank of Poland</h5>
-                    <p class="card-text text-start">Projeto da semana 5 de DIW: website feito para o banco nacional da Polônia</p>
-                      <div class="mt-auto d-flex flex-column">
-                        <div class="d-flex flex-row justify-content-evenly mb-4">
-                          <i class="fa-regular fa-star"> 0</i>
-                          <i class="fa-regular fa-user"> 0</i>
-                        </div>
-                        <a href="https://github.com/gnvr29/" class="btn btn-primary">Ler mais</a>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              Repo card 4
-              <div class="col d-flex justify-content-center col-lg-6 col-xxl-3">
-                <div class="card mb-4" style="width: 18rem;">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-center">PUC-Activities</h5>
-                    <p class="card-text text-start">Repositório contendo os principais trabalhos práticos durante meu curso de Engenharia de Software na PUC</p>
-                      <div class="mt-auto d-flex flex-column">
-                        <div class="d-flex flex-row justify-content-evenly mb-4">
-                          <i class="fa-regular fa-star"> 0</i>
-                          <i class="fa-regular fa-user"> 0</i>
-                        </div>
-                        <a href="https://github.com/gnvr29/" class="btn btn-primary">Ler mais</a>
-                      </div>
-                  </div>
-                </div>
-              </div>-->
             </div>
           </div>
         </div>
@@ -164,7 +98,6 @@
       <div class="row mb-5" id="Suggested-content" name="Suggested-content">
         <div class="col">
           <h2 class="border-bottom border-secondary pb-2 mb-4 mb-xxl-3">Conteúdo sugerido</h2>
-
           <!--Carousel code-->
           <div id="carouselExampleCaptions" class="carousel slide p-xxl-5 mx-xxl-auto">
             <div class="carousel-indicators">
@@ -303,6 +236,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="scripts/repos.js"></script>
+  <script src="scripts/profile.js"></script>
 
 </body>
 

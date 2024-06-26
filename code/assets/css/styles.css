@@ -15,6 +15,11 @@ header, main, footer {
     background-color: lightgray;
 }
 
+.followers {
+    display: flex;
+    flex-direction: row;
+}
+
 a {
     text-decoration: none;
 }

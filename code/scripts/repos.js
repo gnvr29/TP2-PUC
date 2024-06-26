@@ -29,10 +29,10 @@ function displayRepos(){
                     <p class="card-text text-start">${repo.description}</p>
                     <div class="mt-auto d-flex flex-column">
                       <div class="d-flex flex-row justify-content-evenly mb-4">
-                        <i class="fa-regular fa-star"> 0</i>
-                        <i class="fa-regular fa-user"> 0</i>
+                        <i class="fa-regular fa-star"> ${repo.stargazers_count}</i>
+                        <i class="fa-solid fa-code-fork"> ${repo.forks_count}</i>
                       </div>
-                      <a href="${repo.html_url}" class="btn btn-primary">Ler mais</a>
+                      <a href="${repo.html_url}" target="_blank" class="btn btn-primary">Ler mais</a>
                     </div>
                   </div>
                 </div>
