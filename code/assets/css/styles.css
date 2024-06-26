@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header, main, footer {
+    overflow: hidden;
+}
+
+#name-button {
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel-inner {
+    box-shadow: 0 0 10px black;
+}
+
+.copyright-message {
+    font-size: 12px;
+}
+
+@media only screen and (min-width : 1400px) {
+    .container { 
+        max-width: 5000px; 
+    } 
+    
+    a {
+        text-decoration: none;
+    }
+
+    #my-pic {
+        max-height: 400px;
+    }
+
+    #carouselExampleCaptions {
+        max-width: 1200px;
+    }
+
+}

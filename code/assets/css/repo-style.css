@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header, main, footer {
+    overflow: hidden;
+}
+
+#name-button {
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.copyright-message {
+    font-size: 12px;
+}
+
+@media only screen and (min-width : 1400px) {
+    .container { 
+        max-width: 5000px; 
+    } 
+    
+    a {
+        text-decoration: none;
+    }
+}
