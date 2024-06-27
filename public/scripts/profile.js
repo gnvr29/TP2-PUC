@@ -7,7 +7,7 @@ const locationArea = document.getElementById("location-area");
 const websiteLink = document.getElementById("website-area");
 const instagramLink = document.getElementById("instagram-area");
 const linkedInLink = document.getElementById("linkedin-area");
-const githubArea = document.getElementById("github-area");
+const twitterLink = document.getElementById("twitter-area");
 const followersArea = document.getElementById("followers");
 let profileDataJSON;
 
@@ -45,21 +45,22 @@ function displayProfileText(){
     followersArea.innerHTML = ` ${followers}`;
     websiteLink.setAttribute("href", website);
     websiteLink.innerHTML = `<p class="mb-5">${website}</p>`;
-    githubArea.setAttribute("href", website);
 }
 
 async function displayLinks() {
     try {
         let response = await fetch(profileSocialMediaURL);
         if(!response.ok){
-            throw new Error("Unable ti fetch user's social media account");
+            throw new Error("Unable to fetch user's social media account");
         }
         let linksJSON = await response.json();
         let linkedin = linksJSON[0].url;
         let instagram = linksJSON[1].url;
+        let twitter = linksJSON[2].url;
 
         instagramLink.setAttribute("href", instagram);
         linkedInLink.setAttribute("href", linkedin);
+        twitterLink.setAttribute("href", twitter);
     } catch (error) {
         console.log(error);
     }

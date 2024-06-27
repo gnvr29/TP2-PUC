@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Ética dos testes A/B",
+        "description": "Apesar de sua popularidade, o uso de testes A/B está em um impasse moral. Clique aqui para saber mais",
+        "img_url": "assets/img/ab-test.jpg",
+        "content_url": "https://link.springer.com/article/10.1007/s11023-023-09644-y"
+    },
+    {
+        "id": 2,
+        "title": "Top ameaças cybenéticas de 2023",
+        "description": "Clique aqui e veja a lista das maiores ameaças cibernéticas de 2023",
+        "img_url": "assets/img/cybersec.jpg",
+        "content_url": "https://onlinedegrees.sandiego.edu/top-cyber-security-threats/"
+    },
+    {
+        "id": 3,
+        "title": "Ética das IAs",
+        "description": "Úteis porém perigosas: clique aqui e descubra mais sobre a ética das máquinas",
+        "img_url": "assets/img/ai-ethics.jpg",
+        "content_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10097940/"
+    },
+    {
+        "id": 4,
+        "title": "Computação quântica",
+        "description": "Quando a física encontra a computação: clique aqui para saber mais sobre o futuro dos computadores",
+        "img_url": "assets/img/quantum-computing.jpg",
+        "content_url": "https://www.ibm.com/topics/quantum-computing"
+    },
+    {
+        "id": 5,
+        "title": "LLMs",
+        "description": "Clique aqui e aprenda mais sobre LLM's",
+        "img_url": "assets/img/llm.jpg",
+        "content_url": "https://www.databricks.com/resources/ebook/tap-full-potential-llm?scid=7018Y000001Fi0cQAC&utm_medium=paid+search&utm_source=google&utm_campaign=19774681822&utm_adgroup=154676399504&utm_content=ebook&utm_offer=tap-full-potential-llm&utm_ad=661673371634&utm_term=llm&gad_source=1&gclid=Cj0KCQjw2uiwBhCXARIsACMvIU159pgbF96iLH2UbKsaKlnmM1ZaGMwAne_DP2MMpCZauj9VRn4n8-caAl7AEALw_wcB"
+    }
+]

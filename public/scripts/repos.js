@@ -1,8 +1,8 @@
-const repoArea = document.getElementById("repo-area");
-const apiLink = "https://api.github.com/users/gnvr29/";
-const apiRepos = apiLink + "repos";
-const reposArea = document.getElementById('repo-area');
+const indexURL = "http://127.0.0.1:5500/public"
+const apiLink = "https://api.github.com/users/gnvr29";
+const apiRepos = apiLink + "/repos";
 const reposNum = document.getElementById('numRepos');
+const repoArea = document.getElementById("repo-area");
 let reposJSON;
 
 async function fetchReposData() {
@@ -21,7 +21,7 @@ async function fetchReposData() {
 
 function displayRepos(){
     reposJSON.forEach(repo => {
-        reposArea.innerHTML += 
+      repoArea.innerHTML += 
         `<div class="col d-flex justify-content-center col-lg-6 col-xxl-3">
                 <div class="card mb-4" style="width: 18rem;">
                   <div class="card-body d-flex flex-column">
@@ -32,7 +32,7 @@ function displayRepos(){
                         <i class="fa-regular fa-star"> ${repo.stargazers_count}</i>
                         <i class="fa-solid fa-code-fork"> ${repo.forks_count}</i>
                       </div>
-                      <a href="${repo.html_url}" target="_blank" class="btn btn-primary">Ler mais</a>
+                      <a href="${indexURL}/repo.html?id=${repo.id}" target="_blank" class="btn btn-primary">Ler mais</a>
                     </div>
                   </div>
                 </div>

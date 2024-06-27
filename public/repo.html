@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://kit.fontawesome.com/0b74d2be28.js" crossorigin="anonymous"></script>
-    <title>TP1-PUC</title>
+    <title>TP2-PUC</title>
 </head>
 
 <body>
@@ -43,32 +43,28 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="border-bottom border-secondary pb-2 mb-4">Repositório: TP1-PUC</h2>
+                    <h2 class="border-bottom border-secondary pb-2 mb-4" id="repo-name"></h2>
                     <div class="container ml-3 d-flex flex-column">
                         <div>
                             <h3>Descrição</h3>
-                            <p>Este repositório contém todo o código e especificações do primeiro trabalho prático da matéria de Desenvolvimento de interfaces Web do curso de Engenharia de Software da PUC Minas do meu primeiro semestre. Este projeto consiste em uma página contendo minhas informações de contato . No arquivo README.md estão listados requisitos funcionais e restrições desta página, além de apresentar seu wireframe.</p>
+                            <p id="description"></p>
                         </div>
                         <h3>Data de criação</h3>
                         <div class="d-flex flex-row justify-content-between">
-                            <p>11/4/2024</p>
-                            <i class="fa-regular fa-star"> 0</i>
+                            <p id="date"></p>
+                            <i class="fa-regular fa-star" id="stars"></i>
                         </div>
                         <h3>Linguagens</h3>
                         <div class="d-flex flex-row justify-content-between">                             
-                            <p>HTML e CSS</p>
-                            <i class="fa-regular fa-user"> 0</i>
+                            <p id="languages"></p>
+                            <i class="fa-solid fa-code-fork" id="forks"></i>
                         </div>
                         <div>
                             <h3>Link de acesso</h3>
-                            <p><a href="https://github.com/gnvr29/TP1-PUC/tree/main">https://github.com/gnvr29/TP1-PUC/tree/main</a></p>
+                            <p><a href="" id="repoLink"></a></p>
                         </div>
                         <h3>Tópicos</h3>
-                        <div>
-                            <span class="badge rounded-pill text-bg-primary">HTML</span>
-                            <span class="badge rounded-pill text-bg-primary">CSS</span>
-                            <span class="badge rounded-pill text-bg-primary">Bootstrap 5</span>
-                            <span class="badge rounded-pill text-bg-primary">Front-end development</span>
+                        <div id="topics">
                         </div>
                     </div>
                 </div>
@@ -86,6 +82,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <script src="scripts/repoShareData.js"></script>
 
 </body>
 
