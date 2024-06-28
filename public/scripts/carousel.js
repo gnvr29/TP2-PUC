@@ -4,7 +4,7 @@ let carouselSlides;
 
 async function fetchCarouselData(){
     try {
-        let response = await fetch("../../db/carousel.json");
+        let response = await fetch("http://localhost:3000/carousel");
         if(!response.ok){
             console.log("There was a problem fetching the slides's data for the carousel");
         }

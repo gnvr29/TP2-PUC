@@ -18,7 +18,6 @@ async function fetchProfileData(){
             throw new Error("Unable to fetch user's data");
         }
         profileDataJSON = await response.json();
-        console.table(profileDataJSON);
         displayProfilePic();
         displayProfileText();
         displayLinks();

@@ -1,4 +1,3 @@
-const indexURL = "http://127.0.0.1:5500/public"
 const apiLink = "https://api.github.com/users/gnvr29";
 const apiRepos = apiLink + "/repos";
 const reposNum = document.getElementById('numRepos');
@@ -32,7 +31,7 @@ function displayRepos(){
                         <i class="fa-regular fa-star"> ${repo.stargazers_count}</i>
                         <i class="fa-solid fa-code-fork"> ${repo.forks_count}</i>
                       </div>
-                      <a href="${indexURL}/repo.html?id=${repo.id}" target="_blank" class="btn btn-primary">Ler mais</a>
+                      <a href="repo.html?id=${repo.id}" target="_blank" class="btn btn-primary">Ler mais</a>
                     </div>
                   </div>
                 </div>

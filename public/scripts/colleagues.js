@@ -3,7 +3,7 @@ let colleaguesJSON;
 
 async function fetchColleaguesData(){
     try {
-        let response = await fetch("../../db/colleagues.json");
+        let response = await fetch("http://localhost:3000/colleagues");
         if(!response.ok){
             console.log("Unable to fetch data from the colleagues's JSON");
         }
